@@ -12,6 +12,14 @@ public class SpudNik_PoCT : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
+		PublicIncludePaths.AddRange(new string[] { "SpudNik_PoCT/Public" });
+        PrivateIncludePaths.AddRange(new string[] { "SpudNik_PoCT/Private" });
+
+		if(Target.Type == TargetRules.TargetType.Editor)
+		{
+			PublicDependencyModuleNames.AddRange(new string[] { "PotatoModule" });
+		}
+
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 		
