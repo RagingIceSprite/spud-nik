@@ -14,6 +14,14 @@ enum class ESplineShape : uint8
 	SS_Custom UMETA(DisplayName="Manual")
 };
 
+UENUM(BlueprintType)
+enum class EItemType : uint8
+{
+	IT_WateringCan UMETA(DisplayName="Watering Can"),
+	IT_Gloves UMETA(DisplayName="Gloves"),
+	IT_Shovel UMETA(DisplayName="Shovel")
+};
+
 UCLASS()
 class SPUDNIK_POCT_API UWallHugSpline : public UBlueprintFunctionLibrary
 {
